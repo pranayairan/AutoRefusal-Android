@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@drawable/bg">
+	 <TextView
+	  	android:id="@+id/textView1"
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:layout_gravity="center"
+	  	android:layout_marginBottom="40dip"
+	  	android:layout_marginTop="5dip"
+	  	android:text="Auto Complaint Application"
+	  	android:textAppearance="?android:attr/textAppearanceLarge" android:textStyle="bold"/>
+	  
+	 <LinearLayout
+	  	android:layout_width="match_parent"
+	  	android:layout_height="0dp" android:layout_marginTop="5dip" android:layout_weight=".15">
+	      <TextView
+	      	android:id="@+id/aadharname"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:layout_marginLeft="2dip"
+	      	android:layout_marginRight="5dip"
+	      	android:text="Option"
+	      	android:textAppearance="?android:attr/textAppearanceLarge" android:textStyle="bold"/>
+	      <Spinner
+	      	android:id="@+id/options"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:layout_marginLeft="40dp"
+	      	android:layout_weight="1" 
+	      	android:entries="@array/options_array">
+	          </Spinner>
+	  </LinearLayout>
+	  
+	  <LinearLayout
+	  	android:layout_width="match_parent"
+	  	android:layout_height="0dp" android:layout_marginTop="5dip" android:layout_weight=".15">
+	      <TextView
+	      	android:id="@+id/aadharname"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:layout_marginLeft="2dip"
+	      	android:layout_marginRight="5dip"
+	      	android:text="Auto no"
+	      	android:textAppearance="?android:attr/textAppearanceLarge" android:textStyle="bold"/>
+	      <EditText
+	      	android:id="@+id/autoNumber"
+	      	android:layout_width="match_parent"
+	      	android:layout_height="wrap_content"
+	      	android:layout_weight="1"
+	      	android:ems="10"
+	      	android:inputType="textPersonName"
+	      	android:hint="Ex: KA01XY1234" android:layout_marginLeft="35dp"/>
+	  </LinearLayout>
+	  
+	  <LinearLayout
+	  	android:layout_width="match_parent"
+	  	android:layout_height="0dp" android:layout_marginTop="5dp" android:layout_weight=".15">
+	      <TextView
+	      	android:id="@+id/aadharname"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:layout_marginLeft="2dip"
+	      	android:layout_marginRight="5dip"
+	      	android:text="Going From"
+	      	android:textAppearance="?android:attr/textAppearanceLarge" android:textStyle="bold"/>
+	      <EditText
+	      	android:id="@+id/from"
+	      	android:layout_width="match_parent"
+	      	android:layout_height="wrap_content"
+	      	android:layout_weight="1"
+	      	android:ems="10"
+	      	android:inputType="textPersonName"
+	      	android:hint="Ex: MG Road" />
+	  </LinearLayout>
+	  
+	  <LinearLayout
+	  	android:layout_width="match_parent"
+	  	android:layout_height="0dp" android:layout_marginTop="5dip" android:layout_weight=".15">
+	      <TextView
+	      	android:id="@+id/aadharname"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:layout_marginLeft="2dip"
+	      	android:layout_marginRight="5dip"
+	      	android:text="Going To"
+	      	android:textAppearance="?android:attr/textAppearanceLarge" android:textStyle="bold"/>
+	      <EditText
+	      	android:id="@+id/to"
+	      	android:layout_width="match_parent"
+	      	android:layout_height="wrap_content"
+	      	android:layout_weight="1"
+	      	android:ems="10"
+	      	android:inputType="textPersonName"
+	      	android:hint="Ex: Kormangla" android:layout_marginLeft="30dp"/>
+	  </LinearLayout>
+	  
+	  <LinearLayout
+	  	android:layout_width="match_parent"
+	  	android:layout_height="0dp" android:layout_marginTop="5dip" android:layout_weight=".15">
+	      <TextView
+	      	android:id="@+id/aadharname"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:layout_marginLeft="2dip"
+	      	android:layout_marginRight="5dip"
+	      	android:text="Time"
+	      	android:textAppearance="?android:attr/textAppearanceLarge" android:textStyle="bold"/>
+	      <Button
+	      	android:id="@+id/button1"
+	      	style="?android:attr/buttonStyleSmall"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:text="Select time" android:layout_marginLeft="65dp" android:clickable="true" android:onClick="chooseTime"/>
+	  </LinearLayout>
+	  <TextView
+	  	android:id="@+id/time"
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="0dp"
+	  	android:textAppearance="?android:attr/textAppearanceMedium" android:layout_weight=".1" android:textStyle="bold"/>
+	  
+	  <Button
+	  	android:id="@+id/verifyPayee"
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="0dp"
+	  	android:layout_gravity="center"
+	  	android:layout_marginTop="5dp"
+	  	android:clickable="true"
+	  	android:text="Send Complain"
+	  	android:textSize="22sp" android:onClick="SendComplain" android:layout_weight=".20"/>
+	  
+</LinearLayout>

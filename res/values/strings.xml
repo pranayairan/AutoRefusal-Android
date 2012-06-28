@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, AutoRefusalActivity!</string>
+	<string name="app_name">AutoRefusal</string>
+	
+	 <string-array name="options_array">
+        <item>OverCharge</item>
+        <item>Refusal</item>
+        
+    </string-array>
+</resources>
